@@ -1,0 +1,77 @@
+:root{
+    --darkColor: #5064C3;
+    --lightColor: #8092DE;
+    --questionColor: #FFD103;
+    --questionColorHover: #947900;
+    --tagColor: #FA5E38;
+    --tagDark: #b44327;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    /* min-height: 100vh;
+    display: grid;
+    place-items: center; */
+    background-color: var(--lightColor);
+}
+
+
+header{
+    font-family: 'Kalam', cursive;
+    background-color: var(--darkColor);
+}
+
+/* Card ==>START */
+.card-holder{
+    background-color: var(--darkColor);
+}
+
+.image-holder{
+    /* border: 1rem solid var(--darkColor); */
+    background-color: var(--lightColor);
+}
+
+
+.answer-choice{
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    padding-right: 0;
+    background-color: var(--questionColor);
+}
+
+.answer-choice:hover{
+    cursor: pointer;
+    background-color: var(--questionColorHover);
+}
+
+.question-num-tag{
+    padding: 0.25rem 1.5rem;
+    top: -1rem;
+    right:-1rem;
+    background-color: var(--tagColor);
+}
+
+.home-btn{
+    padding: 0.5rem 1rem;
+    top: 2rem;
+    left: -3rem;
+    background-color: var(--tagColor);
+}
+
+.home-btn:hover{
+    cursor: pointer;
+    background-color: var(--tagDark);
+}
+
+#timer{
+    color: var(--tagColor);
+}
+
+/* Card ==>END */
