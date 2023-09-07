@@ -17,8 +17,8 @@
         Quizly
         <i class="fa-solid fa-question" style="color: #ffffff;"></i>
     </header>
-    <div class="card-holder container rounded p-5 col-6 position-relative">
-        <div class="row align-items-center ">
+    <div class="card-holder container rounded p-5 col-8 col-md-6 position-relative">
+        <div class="row align-items-center">
             <div class="image-holder col-12 col-md-6 rounded pt-2 pb-2">
                 <img src="assets/animal.png" class="img-fluid rounded" alt="question Image">
             </div>
@@ -34,10 +34,26 @@
                 </ul>
             </div>
         </div>
-        <div id="timer" class="position-absolute top-0 end-50 fs-4 fw-bold"> 00:20</div>
-        <div class="question-num-tag text-light rounded-pill position-absolute">1/5</div>
+        <div id="timer" class="position-absolute top-0 end-50 fs-4 fw-bold">
+             <span class="minutes">00</span>:<span class="seconds">20</span>
+            </div>
+        <div class="question-num-tag text-light rounded-pill position-absolute">4/5</div>
         <div class="home-btn rounded-start-pill position-absolute">
             <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+        </div>
+    </div>
+
+    <div class="gameEndCard container col-8 col-md-5 p-4 rounded d-none">
+        <div class="row align-items-center text-center">
+            <h2>You Scored</h2>
+            <h3 class="gameEndScore fw-bold">10</h3>
+            <span>points</span>
+
+            <p class="gameEndMessage fs-1 text-light fst-italic">Congartulations, you did it!</p>
+            <div class="gameEndImage">
+                <img src="assets/congrats.gif" class="img-fluid rounded" alt="score gif">
+            </div>
+
         </div>
     </div>
 
