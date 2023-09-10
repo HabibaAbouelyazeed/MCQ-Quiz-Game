@@ -77,3 +77,26 @@ header{
 .gameEndCard{
     background-color: var(--darkColor);
 }
+
+
+/* Sign page ==>START */
+.signCard-holder{
+    box-shadow: 0px 2px 10px 2px rgb(170, 170, 170);
+}
+
+.logo{
+    font-family:'Kalam', cursive;
+}
+
+form button[type="submit"]{
+    background-color: var(--questionColor);
+}
+
+form button[type="submit"]:hover{
+    background-color: var(--questionColorHover);
+}
+
+#signUp-btn:hover, #login-btn:hover{
+    cursor: pointer;
+    color: black !important;
+}
