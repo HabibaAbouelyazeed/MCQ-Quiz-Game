@@ -32,7 +32,7 @@ let userLoginData = [
 logInForm.onsubmit = function(e){
     e.preventDefault()
     if(checkLoginParams()){
-        document.location.href = './index.html';
+        document.location.href = './game.html';
     }else{
         emailHelpSmall.textContent = "Couldn't find your account, Please check your login credentials"
     }
@@ -64,6 +64,7 @@ loginPageBtn.addEventListener('click', function(){
     signUpContainer.classList.add('d-none');
     signUpInputEmail.value = '';
     signUpInputPassword.value = '';
+    signUpConfirmPassword.value = '';
     signUpMsgSmall.textContent = '';
 });
 

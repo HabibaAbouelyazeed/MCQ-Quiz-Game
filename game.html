@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>MCQ quiz game</title>
+</head>
+<body class="row justify-content-center align-items-center">
+    <header class="container position-absolute top-0 text-light text-center pt-1 fs-2">
+        Quizly
+        <i class="fa-solid fa-question" style="color: #ffffff;"></i>
+    </header>
+    <div class="card-holder container rounded p-5 col-8 col-md-6 position-relative">
+        <div class="row align-items-center">
+            <div class="image-holder col-12 col-md-6 rounded pt-2 pb-2">
+                <img src="assets/animal.png" class="img-fluid rounded" alt="question Image">
+            </div>
+            <div class="question-info col-12 col-md-6">
+                <h3 class="question-Head text-light fw-bold">
+                    What is the largest mammal in the world?
+                </h3>
+                <ul class="choices-list list-unstyled">
+                    <li class="answer-choice rounded-end-pill">Elephant</li>
+                    <li class="answer-choice rounded-end-pill">Giraffe</li>
+                    <li class="answer-choice rounded-end-pill">Blue Whale</li>
+                    <li class="answer-choice rounded-end-pill">Kangaroo</li>
+                </ul>
+            </div>
+        </div>
+        <div id="timer" class="position-absolute top-0 end-50 fs-4 fw-bold">
+             <span class="minutes">00</span>:<span class="seconds">20</span>
+            </div>
+        <div class="question-num-tag text-light rounded-pill position-absolute">4/5</div>
+        <div class="home-btn rounded-start-pill position-absolute">
+            <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+        </div>
+    </div>
+
+    <div class="gameEndCard container col-8 col-md-5 p-4 rounded d-none">
+        <div class="row align-items-center text-center">
+            <h2>You Scored</h2>
+            <h3 class="gameEndScore fw-bold">10</h3>
+            <span>points</span>
+
+            <p class="gameEndMessage fs-1 text-light fst-italic">Congartulations, you did it!</p>
+            <div class="gameEndImage">
+                <img src="assets/congrats.gif" class="img-fluid rounded" alt="score gif">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
