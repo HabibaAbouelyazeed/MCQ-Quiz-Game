@@ -57,6 +57,8 @@ const gameEndInfo = [
   }
 ]
 
+
+const gameRulesDiv = document.querySelector("#gameRules");
 //Game Card
 const cardHolderDiv = document.querySelector(".card-holder");
 const imageHolderImg = document.querySelector(".image-holder img");
@@ -64,17 +66,35 @@ const questionHeadH = document.querySelector(".question-Head");
 const choicesListLi = document.querySelector(".choices-list");
 const timerDiv = document.querySelector("#timer");
 const questionNumTagDiv = document.querySelector(".question-num-tag");
+const homeBtnDiv = document.querySelectorAll(".home-btn");
 //Score Card
 const gameEndCardDiv = document.querySelector(".gameEndCard");
 const gameEndScoreH = document.querySelector(".gameEndScore");
 const gameEndMessageP = document.querySelector(".gameEndMessage");
 const gameEndImageImg = document.querySelector(".gameEndImage img");
-
+const playAgainBtn = document.querySelector(".play-again-btn ")
 
 let gameScore = 0;
 let questionsIndex = 0;
 
-game();
+
+gameRulesDiv.addEventListener('click', function(){
+  gameRulesDiv.classList.add('d-none');
+  cardHolderDiv.classList.remove('d-none');
+  game();
+});
+
+homeBtnDiv.forEach(function(elem){
+  elem.addEventListener('click', function(){
+    document.location.href = "./index.html"
+  })
+})
+
+
+playAgainBtn.addEventListener('click', function(){
+  window.location.reload();
+})
+
 
 function game() {
   renderQuestion(quizData[questionsIndex], questionsIndex + 1);

@@ -17,7 +17,21 @@
         Quizly
         <i class="fa-solid fa-question" style="color: #ffffff;"></i>
     </header>
-    <div class="card-holder container rounded p-5 col-8 col-md-6 position-relative">
+    <!-- Game Rules -->
+    <div id="gameRules" class="container d-flex flex-column rounded col-8 col-md-6 pt-3 pb-3">
+        <h2 id="rulesHeader" class="text-center fst-italic fw-bold">Game rules</h2>
+        <ul id="rulesList" class="text-light pt-2 pb-2 lh-lg">
+            <li>Questions has four answer options, only one is correct so choose wisely.</li>
+            <li>Each question has a specific timer shown above, select your answer before time runs out.</li>
+            <h3 id="scoringHeader" class="mt-2 mb-1 fst-italic">Scoring</h3>
+            <li>1 correct answer = 1 point</li>
+            <li>Timer remaing time > 10 seconds = 2 points</li>
+            <li>Timer remaing time > 5 seconds = 1 point</li>
+        </ul>
+        <div id="startGameBtn" class="btn text-light fw-bold mt-4 mb-2 align-self-center">Start Game</div>
+    </div>
+    <!-- Main Game -->
+    <div class="card-holder container rounded p-5 col-8 col-md-6 position-relative d-none">
         <div class="row align-items-center">
             <div class="image-holder col-12 col-md-6 rounded pt-2 pb-2">
                 <img src="assets/animal.png" class="img-fluid rounded" alt="question Image">
@@ -42,7 +56,7 @@
             <i class="fa-solid fa-house" style="color: #ffffff;"></i>
         </div>
     </div>
-
+    <!-- Game Results -->
     <div class="gameEndCard container col-8 col-md-5 p-4 rounded d-none">
         <div class="row align-items-center text-center">
             <h2>You Scored</h2>
@@ -54,6 +68,14 @@
                 <img src="assets/congrats.gif" class="img-fluid rounded" alt="score gif">
             </div>
 
+            <div id="actionBtns" class="mt-4">
+                <div class="play-again-btn btn p-2 me-2">
+                    <i class="fa-solid fa-arrow-rotate-left" style="color: #ffffff;"></i>
+                </div>
+                <div class="home-btn btn p-2">
+                    <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+                </div>
+            </div>
         </div>
     </div>
 

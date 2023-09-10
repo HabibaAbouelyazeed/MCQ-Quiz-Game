@@ -25,6 +25,56 @@ header{
     background-color: var(--darkColor);
 }
 
+/* Sign page ==>START */
+.signCard-holder{
+    box-shadow: 0px 2px 10px 2px rgb(170, 170, 170);
+}
+
+.logo{
+    font-family:'Kalam', cursive;
+}
+
+form button[type="submit"]{
+    background-color: var(--questionColor);
+}
+
+form button[type="submit"]:hover{
+    background-color: var(--questionColorHover);
+}
+
+#signUp-btn:hover, #login-btn:hover{
+    cursor: pointer;
+    color: black !important;
+}
+
+/* Sign page ==>END */
+
+
+/* Game Rules ==>START */
+#gameRules{
+    background-color: var(--darkColor);
+}
+
+#gameRules #rulesHeader{
+    color: var(--questionColor);
+}
+
+#gameRules #scoringHeader{
+    color: var(--tagColor);
+}
+
+#startGameBtn{
+    background-color: var(--questionColor);
+}
+
+#startGameBtn:hover{
+    cursor: pointer;
+    background-color: var(--tagDark);
+}
+
+/* Game Rules ==>END */
+
+
 /* Card ==>START */
 .card-holder{
     background-color: var(--darkColor);
@@ -72,31 +122,14 @@ header{
 }
 
 /* Card ==>END */
-
-
 .gameEndCard{
     background-color: var(--darkColor);
 }
 
-
-/* Sign page ==>START */
-.signCard-holder{
-    box-shadow: 0px 2px 10px 2px rgb(170, 170, 170);
+.play-again-btn{
+    background-color: var(--tagColor);
 }
 
-.logo{
-    font-family:'Kalam', cursive;
-}
-
-form button[type="submit"]{
-    background-color: var(--questionColor);
-}
-
-form button[type="submit"]:hover{
-    background-color: var(--questionColorHover);
-}
-
-#signUp-btn:hover, #login-btn:hover{
-    cursor: pointer;
-    color: black !important;
+.play-again-btn:hover{
+    background-color: var(--tagDark);
 }
